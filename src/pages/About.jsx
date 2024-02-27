@@ -15,8 +15,9 @@ import AboutImg from "../assets/about-img.png";
 const About = () => {
   return (
     <VStack
-      paddingInline="4"
+      // paddingInline="4"
       id="About"
+      p="8"
       pt="4rem"
       pb="4rem"
       gap="2rem"
@@ -67,7 +68,7 @@ const About = () => {
             gap="4rem"
             textAlign="center"
           >
-            <VStack spacing="4" align="start" justify="center" p="10">
+            <VStack spacing="4" align="start" justify="center">
               <Heading
                 style={{ fontFamily: "Kode Mono, monospace" }}
                 fontSize={{ base: "lg", md: "xl", lg: "3xl" }}

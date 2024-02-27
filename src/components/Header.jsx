@@ -51,6 +51,8 @@ const Header = () => {
 
   window.addEventListener("scroll", changeBg);
 
+  const textColor = navBar ? "#00bbf0" : "#fff";
+
   return (
     <SimpleGrid
       alignItems="center"
@@ -77,33 +79,89 @@ const Header = () => {
     >
       <Text cursor="pointer" fontSize="lg">
         <ChakraLink
-          fontWeight="bold"
+          onClick={logo}
+          fontWeight="500"
           as={ScrollLink}
           to="Home"
           smooth={true}
           duration={500}
           position="relative"
+          fontSize="xl"
           _hover={{
             textDecoration: "none",
+            color: "#00bbf0",
             _after: {
               width: "100%",
+              opacity: "0.8",
             },
-            color: "#00bbf0",
+            _before: {
+              width: "100%",
+              opacity: "0.8",
+            },
+            "& > span": {
+              opacity: 1, // Ensure span is visible on hover
+              w: "56%",
+            },
+            "& > spanTwo": {
+              opacity: 1, // Ensure span is visible on hover
+              w: "37%",
+            },
+            "& > .spanText": {
+              color: textColor,
+            },
           }}
-          _after={{
-            content: "''",
-            width: "0",
-            height: "1.3px",
-            transition: "width .25s ease-in-out",
-            backgroundColor: "#00bbf0",
-            position: "absolute",
-            bottom: "-10%",
-            left: "-50%",
-            transform: " translate(50%,50%) ",
-          }}
-          onClick={logo}
+          // _after={{
+          //   content: "''",
+          //   width: "0",
+          //   height: "2px",
+          //   backgroundColor: "#00bbf0",
+          //   position: "absolute",
+          //   top: "-20%",
+          //   left: "-50%",
+          //   transform: "translate(50%,50%)",
+          //   opacity: "0.1",
+          //   transition: ".3s ease-in-out",
+          // }}
+          // _before={{
+          //   content: "''",
+          //   width: "0",
+          //   height: "2px",
+          //   backgroundColor: "#00bbf0",
+          //   position: "absolute",
+          //   bottom: "-10%",
+          //   right: "-50%",
+          //   transform: "translate(-50%,-50%)",
+          //   opacity: "0.1",
+          //   transition: ".3s ease-in-out",
+          // }}
         >
-          Ibad Ahmed
+          <Box as="span" className="spanText" color="#00bbf0">
+            {" "}
+            Ibad{" "}
+          </Box>
+          Ahmed
+          <Box
+            as="span"
+            position="absolute"
+            right="0"
+            top="0%"
+            transform="translate(0%,-50%)"
+            width="0"
+            h="4px"
+            backgroundColor="#00bbf0"
+            transition=".3s ease-in-out"
+          ></Box>
+          <Box
+            as="spanTwo"
+            position="absolute"
+            left="-3px"
+            bottom="0%"
+            transform="translate(0%,-50%)"
+            width="0"
+            h="4px"
+            backgroundColor="#00bbf0"
+            transition=".3s ease-in-out"
+          ></Box>
         </ChakraLink>
       </Text>
       {/* Desktop  */}
@@ -231,7 +289,7 @@ const Header = () => {
         left="0"
         w="full"
         h="100vh"
-        bg="#000"
+        bg="#00204a"
         flexDirection="column"
         align="center"
         justify="center"

@@ -47,7 +47,7 @@ const Team = () => {
     <VStack
       pt="4rem"
       pb="4rem"
-      paddingInline="4"
+      p="4"
       id="Team"
       bg="#00204a"
       minH="100vh"
@@ -55,7 +55,7 @@ const Team = () => {
       style={{ fontFamily: '"Arima", system-ui' }}
     >
       <Heading style={{ fontFamily: "Kode Mono, monospace" }}>
-        Our<span style={{ color: "#00bbf0" }}>Team</span>
+        Our <span style={{ color: "#00bbf0" }}>Team</span>
       </Heading>
       <SimpleGrid
         gap="2rem"
@@ -70,7 +70,8 @@ const Team = () => {
               borderRadius="md"
               alignItems="center"
               justify="center"
-              p="14"
+              w="20rem"
+              aspectRatio=" 1 / 1.2 "
               bg="#00295e"
               textTransform="capitalize"
               spacing="4"

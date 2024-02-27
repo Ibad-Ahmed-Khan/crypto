@@ -52,6 +52,7 @@ const Customers = () => {
       style={{ fontFamily: '"Arima", system-ui' }}
       pt="4rem"
       pb="4rem"
+      p="8"
       minH="100vh"
     >
       <Heading
@@ -80,6 +81,7 @@ const Customers = () => {
             transition="all .3s ease-in-out"
           >
             <Image
+              boxShadow="0px 2px 4px rgba(1, 2, 1, 0.2)"
               pos="relative"
               top={{ base: "-2rem", md: "-4rem" }}
               left="0"

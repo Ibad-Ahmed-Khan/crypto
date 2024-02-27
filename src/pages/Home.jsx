@@ -15,8 +15,10 @@ import ButtonOne from "../components/Button";
 const Home = () => {
   return (
     <VStack
+      // border="4px solid red"
+      p="8"
       id="Home"
-      pt="4rem"
+      pt="6rem"
       bgImage={`url(${HeroBg})`}
       backgroundSize="cover"
       backgroundPosition="bottom"
@@ -25,6 +27,7 @@ const Home = () => {
       style={{ fontFamily: '"Arima", system-ui' }}
     >
       <SimpleGrid
+        // border="4px solid red"
         columns={{
           base: "1",
           md: "1",
@@ -34,7 +37,12 @@ const Home = () => {
         gap="2rem"
         minH="80vh"
       >
-        <VStack spacing="4" align="start" justify="center" p="10">
+        <VStack
+          spacing="4"
+          align="start"
+          justify="center"
+          // border="4px solid red"
+        >
           <Heading
             style={{ fontFamily: "Kode Mono, monospace" }}
             fontSize={{ base: "3xl", md: "4xl", lg: "4xl" }}

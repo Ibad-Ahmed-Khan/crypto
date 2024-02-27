@@ -45,7 +45,8 @@ const Data = [
 const WhyUs = () => {
   return (
     <VStack
-      paddingInline="4"
+      // paddingInline="4"
+      p="4"
       id="WhyUs"
       pt="4rem"
       pb="4rem"
