@@ -7,6 +7,7 @@ import Team from "./pages/Team";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Customers from "./pages/Customers";
+import SliderComponent from "./components/SliderComponent";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <WhyUs />
       <Team />
       <Customers />
+      {/* <SliderComponent /> */}
       <Footer />
     </Box>
   );

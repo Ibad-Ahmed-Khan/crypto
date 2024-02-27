@@ -77,7 +77,6 @@ const Customers = () => {
             mt="14"
             pb="10"
             boxShadow="0px 2px 4px rgba(0, 0, 0, 0.5)"
-            transform={slider ? "translateX(300%)" : "translateX(0%)"}
             transition="all .3s ease-in-out"
           >
             <Image
