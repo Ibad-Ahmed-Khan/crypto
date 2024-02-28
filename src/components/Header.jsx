@@ -449,7 +449,7 @@ const Header = () => {
           team
         </ChakraLink>
         <ChakraLink
-          onClick={handleToggleIsOpen}
+          // onClick={handleToggleIsOpen}
           fontWeight="500"
           as={ScrollLink}
           smooth={true}
@@ -457,21 +457,7 @@ const Header = () => {
           position="relative"
           _hover={{
             textDecoration: "none", // Remove default underline
-            _after: {
-              width: "100%",
-            },
             color: "#00bbf0",
-          }}
-          _after={{
-            content: "''",
-            width: "0",
-            height: "1.3px",
-            transition: "width .25s ease-in-out",
-            backgroundColor: "#00bbf0",
-            position: "absolute",
-            top: "-10%",
-            left: "-50%",
-            transform: " translate(50%,50%) ",
           }}
         >
           <Login />

@@ -54,7 +54,7 @@ const Team = () => {
       color="#fff"
       style={{ fontFamily: '"Arima", system-ui' }}
     >
-      <Heading style={{ fontFamily: "Kode Mono, monospace" }}>
+      <Heading pt="4rem" style={{ fontFamily: "Kode Mono, monospace" }}>
         Our <span style={{ color: "#00bbf0" }}>Team</span>
       </Heading>
       <SimpleGrid
